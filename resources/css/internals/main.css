@@ -1,0 +1,52 @@
+.card-header {
+    @apply flex justify-between items-center pt-6 pb-4;
+}
+
+.card-header,
+.card-body,
+.card-footer {
+    @apply p-6;
+}
+
+.card-footer {
+    @apply flex items-center py-6 my-2;
+}
+
+.card-title {
+    @apply text-xl font-semibold text-gray-900;
+}
+
+.btn {
+    @apply text-white focus:ring-4 focus:outline-none rounded-lg font-medium text-center text-base p-2;
+}
+
+/* ============= pan menu components =============== */
+.pan-menu {
+    @apply flex border-b overflow-auto;
+}
+
+.pan-menu>.pan-link {
+    @apply px-8 py-3 text-center border-b-2 border-transparent text-gray-600 whitespace-nowrap cursor-pointer;
+    width: clamp(8rem, auto, auto);
+}
+
+.pan-menu>.pan-link:hover,
+.pan-menu>.pan-link.active {
+    color: var(--primary);
+}
+
+.pan-menu>.pan-link.active {
+    border-color: var(--primary);
+}
+
+/* ============= end pan menu components =============== */
+
+/* ########################### SIDEBAR NAVIGATION ########################### */
+
+
+.sidebar-item.active {
+    @apply dark:bg-gray-600 dark:hover:bg-gray-500;
+
+    @apply bg-gray-200;
+}
+
